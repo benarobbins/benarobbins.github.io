@@ -1,0 +1,92 @@
+/* Body Styles */
+body {
+	font-family: Arial;
+	background-color: #f0f4f8;
+	margin: 0;
+	padding: 20px;
+  }
+  
+/* Section Styles */
+.section {
+	max-width: 1250px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 0 auto 40px;
+	border-left: 4px solid #007BFF;
+	border-right: 4px solid #007BFF;
+}
+
+/* Sub-Section Styles */
+.sub-section {
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 5px 0;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #094a8f;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons for links to code repositories */
+.link-button {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #007bff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+/* Title */
+h1 {
+	text-align: center;
+	color: #2c3e50;
+}
+
+/* Section Heading */
+h2 {
+	color: #007BFF;
+	text-align: center;
+}
+
+/* Sub-Section Heading */
+h3 {
+	color: #007BFF;
+}
+  
+/* Link Styles */
+a {
+	color: #007BFF;
+}
+  
+/* Paragraph Styles */
+p {
+	line-height: 1.6;
+	text-indent: 2em;
+}
+
+/* Video Styles */
+iframe {
+	width: 660px;
+	height: 415px;
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+  
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+	body {
+	  padding: 10px;
+	}
+	.section {
+	  padding: 15px;
+	}
+	iframe {
+		width: auto;
+		height: auto;
+	}
+}
