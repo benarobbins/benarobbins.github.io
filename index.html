@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ben Robbins - ePortfolio</title>
+  <title>ePortfolio</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
   <h1>Ben Robbins - ePortfolio</h1>
-  <h1>Code Review</h1>
-  <a href="https://www.youtube.com/watch?v=DEqTCjxfT38" target="_blank">Watch the Video!</a>
+  
+  <div class="section">
+    <h2>Professional Self-Assessment</h2>
+    <p>
+      When I started my journey through the Computer Science program at SNHU, rather than choosing to be a full-time student, I 
+      chose to be a full-time student and a full-time employee. Balancing both work and school was one of the most challenging 
+      experiences of my life. However, taking that challenge head on and finding creative ways to overcome it has significantly 
+      improved my technical skills in software engineering and allowed me to develop interpersonal skills as a collaborator and 
+      leader. In the workplace, I have learned to develop relationships with my peers, lead cross-functional teams, and use a 
+      positive influence to foster collaboration and change. As a student, my experiences working with emerging technologies such 
+      as machine learning and artificial intelligence have challenged me to critically assess technical problems and identify 
+      efficient solutions. Additionally, I have developed skills focused on security, UX design, collaboration, and optimization 
+      using multiple programming languages such as Python, JavaScript, C++, HTML, etc.
+    </p>
+    <p>
+      In this ePortfolio, I will demonstrate my abilities in software design and engineering, algorithms and data structures, and 
+      databases by improving a full-stack application I previous developed in the Computer Science program at SNHU. The 
+      enhancements to this project will showcase my ability to create a collaborative environment using innovative tools, a 
+      security mindset, and my skills in full-stack development, UX design, and MVC routing architecture. Combining my technical 
+      skills in computer science with my professional interpersonal skills focused on collaboration and leadership, I aim to 
+      become a software developer who drives positive change in the environments around me.
+    </p>
+  </div>
+  
+  <div class="section">
+    <h2>Code Review</h2>
+    <iframe
+            src="https://www.youtube.com/embed/DEqTCjxfT38"
+            allowfullscreen>
+    </iframe>
+  </div>
+  
+  <div class="section">
+    <h2>Artifact Enhancements</h2>
+    <div class="sub-section">
+      <h3>Software Design & Engineering</h3>
+      <a href="https://github.com/benarobbins/CS-465/tree/module7" target="_blank" class="link-button">Original Code</a>
+      <a href="https://github.com/benarobbins/CS-465/tree/Final" target="_blank" class="link-button">Enhanced Code</a>
+      <p>
+        For my enhancement in software design and engineering, I selected my Travlr Getaways full-stack web application 
+        project for my artifact. I originally completed this project during CS-465 Full Stack Development using the MEAN stack. 
+        The purpose of the initial project was to convert a static html page into a dynamic webpage and create an administrative 
+        single-page application. Since only one page was originally created, I chose this project as my artifact as I would be 
+        able to rapidly increase the scale and complexity of the project by converting the remaining 6 pages to dynamic webpages.
+      </p>
+      <p>
+        For this specific category of enhancement, I focused on the front-end of the application. My enhancement plan was to 
+        convert the static html pages to dynamic pages and utilize MVC routing architecture. Additionally, I would replace the 
+        static data with dynamic loops using Handlebars and implement conditional formatting in the header and footer.
+      </p>
+      <p>
+        To implement my planned enhancements, I used the MVC routing architecture as a guide during development. For each page, 
+        I first converted the static html file into a view. Then, for pages with static data that I would load dynamically with 
+        handlebars, I created a temporary JSON data file. However, I didn’t remove the static data from the view at this point. 
+        I then created a controller file for each page. For each page with data, I created functions to read the data from the 
+        JSON file and passed it to the rendered view. Next, I created a route file for each page that implemented the controller. 
+        With the basic MVC architecture implemented, I updated the app.js file to include the router files and implement the URLs 
+        for each page. To finish my enhancements, I then updated the views to utilize Handlebars to dynamically load the data. I 
+        replaced the static data with a loop that referenced the JSON data rather than hardcoded information. Additionally, I 
+        replaced the header and footer with partials on each page. I also updated the header and footer to reference the new page 
+        URLs and added conditional formatting. I added the conditional formatting by passing another Boolean value through the 
+        render function in each controller.
+      </p>
+      <p>
+        By utilizing tools such as Handlebars in addition to the MEAN stack to implement conditional formatting, I corrected an 
+        existing issue within the application and further improved the user’s experience. The successful implementation of these 
+        enhancements using innovative tools demonstrates my skills in full-stack development, MVC routing, and UX design while 
+        also showcasing my ability to design and develop a collaborative environment. In addition, the clear and concise comments, 
+        file structure, and naming conventions I used meet industry standards for documentation and cross-functional communication.
+      </p>
+    </div>
+
+    <div class="sub-section">
+      <h3>Algorithms & Data Structures</h3>
+      <a href="https://github.com/benarobbins/CS-465/tree/module7" target="_blank" class="link-button">Original Code</a>
+      <a href="https://github.com/benarobbins/CS-465/tree/Final" target="_blank" class="link-button">Enhanced Code</a>
+      <p>
+        For my enhancements in algorithms and data structures, I continued to use my Travlr Getaways full-stack web application 
+        project as my artifact. This full-stack application project was initially completed using the MEAN stack (MongoDB, Express, 
+        Angular, and Node) for CS-465 Full Stack Development. The original project scope was to convert one static html page into a 
+        dynamic webpage and to create an administrative single-page application. Both the client-side and back-end of the 
+        application were developed for these requirements. I selected this artifact for this enhancement because only one page of 
+        the application was originally developed. The remaining undeveloped pages provided multiple opportunities to demonstrate my 
+        skills and ability to meet the course outcomes by increasing the scale and complexity of the project.
+      </p>
+      <p>
+        To implement these enhancements, I planned to design and develop the APIs needed for the newly created pages of the 
+        application to access and dynamically display data stored in the back end of the application. The APIs I planned to develop 
+        would consist of methods to retrieve data (i.e., GET requests), add data (i.e., POST requests), and update existing data 
+        (i.e., PUT requests). Additionally, I planned to implement security measures to protect the POST and PUT requests from 
+        unauthenticated users by using JSON Web Tokens. These enhancements will demonstrate my skills and abilities in algorithms 
+        and data structures and security best practices.
+      </p>
+      <p>
+        To implement the APIs, I created a controller for the rooms, meals, and news pages. These APIs connected the front-end to 
+        the back end of the application. In each controller, I created four methods; a GET method for all documents, a GET method 
+        for a single document, a PUT method, and a POST method. Additionally, I implemented error handling to account for any 
+        undefined behavior when attempting to retrieve the data. The methods were exported from the controller to be accessible to 
+        the routes. I updated the existing index.js route file to import the newly created API controllers and define the URLs for 
+        the APIs. To utilize the APIs in the application, I then had to update the controllers for the different pages of the 
+        application. Rather than reading the data from a static JSON file, I updated the controller’s functions use the API 
+        endpoint for GET requests and use the returned data in the dynamic display.
+      </p>
+      <p>
+        In these enhancements, I have successfully designed and developed functional and efficient APIs that support the overall 
+        goal of transitioning this static website into a series of dynamic webpages. Not only do these enhancements demonstrate my 
+        ability to utilize algorithmic principles and best practices, but I have also demonstrated my ability to develop an 
+        application using a security mindset. To maintain the integrity and security of the data stored in the external MongoDB 
+        database, I implemented controls to protect the APIs that can alter or add data using JSON Web Tokens. The JSON Web Token 
+        acts as an authentication security layer for the PUT and POST APIs. Each API function requires the user’s JSON Web Token to 
+        be verified before any data is altered to prevent an unauthorized user from altering the data. 
+      </p>
+    </div>
+    
+    <div class="sub-section">
+      <h3>Databases</h3>
+      <a href="https://github.com/benarobbins/CS-465/tree/module7" target="_blank" class="link-button">Original Code</a>
+      <a href="https://github.com/benarobbins/CS-465/tree/Final" target="_blank" class="link-button">Enhanced Code</a>
+      <p>
+        For my final enhancement focusing on Databases, I continued to use my project from CS-465 Full Stack Development as my 
+        artifact. The purpose of the project was to create a full-stack web application for a mock travel agency called Travlr 
+        Getaways. For this project, I was tasked with converting a single stack html file into a dynamic webpage using the MEAN 
+        stack and creating an administrative single page application (SPA). I selected this project as my artifact for this 
+        enhancement due to its use of MongoDB. By expanding the scale and complexity of the application’s front-end, I would also 
+        need to expand the back end of the application. In doing so, I can demonstrate my skills in NoSQL database deployment and 
+        management.
+      </p>
+      <p>
+        For this enhancement, my plan consisted of identifying the pages of the application that would dynamically display data 
+        and then creating collections in MongoDB to store that data. Additionally, I would then define database schemas for each 
+        new collection and integrate these with the APIs that I created for my second enhancement. 
+      </p>
+      <p>
+        After evaluating each page, I determined that the rooms, meals, and news pages would require new collections for data 
+        storage. Using Mongoose, I then defined database schemas for each of the new collections. To do this, I identified the key 
+        elements in the static html pages and added additional datapoints such as a code field. For each field that in the schemas, 
+        I also defined the attributes for the fields such as the data type. For the code field specifically, I also added an index 
+        to the field. Adding the index requirement to this field will increase the efficiency of the API calls that reference this 
+        field. By utilizing this functionality in the schemas that I defined, not only do I demonstrate my skills in database 
+        design and deployment, but I also continue to demonstrate my ability to use algorithmic principles to optimize the 
+        performance of the application. To finalize this improvement to the APIs, I integrated the mongoose schemas into each 
+        controller for the APIs.
+      </p>
+      <p>
+        With all three of my enhancements completed, I was able to begin testing the application as a whole rather than as 
+        individual components. To do so, I utilized Postman to verify the integrity and functionality of the APIs. Additionally, I 
+        ran the application locally to test the user interface of the completed application. The biggest challenge I encountered 
+        was debugging errors across the application. With the increased size and scale of the application, debugging had the 
+        potential to become time consuming to say the least. However, I was able to minimize the troubleshooting time by leveraging 
+        the error messages I received in the PowerShell window.
+      </p>
+      <p>
+        Through these enhancements, I have demonstrated my skills in NoSQL database management and design, full stack development, 
+        and troubleshooting and testing. These technical skills that I have developed show my ability to use innovative techniques 
+        and tools to develop optimized applications. For example, by defining index elements within the database schemas, I 
+        improved the efficiency of the APIs that I previously developed. Additionally, my evaluation of which pages require a 
+        database collection further demonstrates my ability to assess problems and independently determine the most appropriate 
+        and effective solution to implement. As with my previous enhancements, I also continued to use clear and concise comments 
+        and naming conventions to clearly communicate the intent of the code and its function within the application.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
